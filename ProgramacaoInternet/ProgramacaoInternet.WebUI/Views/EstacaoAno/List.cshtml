@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ProgramacaoInternet.Domain.Entities.EstacaoAno>
+
+@{
+    ViewBag.Title = "EstacaoAno";
+}
+@foreach (var p in Model)
+{
+    <div>
+        <h3>@p.Nome</h3>
+        @p.Observacao
+    </div>
+}
